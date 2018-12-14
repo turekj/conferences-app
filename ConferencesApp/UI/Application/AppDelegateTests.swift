@@ -21,7 +21,7 @@ class AppDelegateTests: XCTestCase {
         XCTAssertNotNil(sut.window)
     }
 
-    func testThatWindowShouldHaveCorrectSizeWhenTheAppIsLaunched() {
+    func testThatWindowShouldHaveCorrectSizeWhenAppIsLaunched() {
         _ = sut.application(.shared, didFinishLaunchingWithOptions: nil)
         XCTAssertEqual(sut.window?.bounds, UIScreen.main.bounds)
     }
@@ -33,6 +33,15 @@ class AppDelegateTests: XCTestCase {
     func testThatWindowIsKey() {
         _ = sut.application(.shared, didFinishLaunchingWithOptions: nil)
         XCTAssertTrue(sut.window!.isKeyWindow)
+    }
+
+    func testThatViewControllerIsPushedOntoStackWhenAppIsLaunched() {
+        _ = sut.application(.shared, didFinishLaunchingWithOptions: nil)
+        let navigationController = sut.window?.rootViewController as? UINavigationController
+
+        XCTAssertNotNil(navigationController)
+        XCTAssertEqual(1, navigationController?.viewControllers.count)
+        XCTAssertNotNil(navigationController?.viewControllers.first as? ViewController)
     }
 
 }

@@ -3,11 +3,14 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
-        |> root(Environment.shared.navigationController)
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+            |> root(Environment.shared.navigationController)
+            <> { $0.makeKeyAndVisible() }
+
+        Environment.shared.navigationController.setViewControllers([ViewController()], animated: false)
 
         return true
     }

@@ -16,6 +16,11 @@ class AppDelegateTests: XCTestCase {
         sut = nil
     }
 
+    func testThatWindowIsSet() {
+        _ = sut.application(.shared, didFinishLaunchingWithOptions: nil)
+        XCTAssertNotNil(sut.window)
+    }
+
     func testThatWindowShouldHaveCorrectSizeWhenTheAppIsLaunched() {
         _ = sut.application(.shared, didFinishLaunchingWithOptions: nil)
         XCTAssertEqual(sut.window?.bounds, UIScreen.main.bounds)
@@ -23,6 +28,11 @@ class AppDelegateTests: XCTestCase {
 
     func testThatApplicationDidFinishLaunchingShouldReturnTrue() {
         XCTAssertTrue(sut.application(.shared, didFinishLaunchingWithOptions: nil))
+    }
+
+    func testThatWindowIsKey() {
+        _ = sut.application(.shared, didFinishLaunchingWithOptions: nil)
+        XCTAssertTrue(sut.window!.isKeyWindow)
     }
 
 }

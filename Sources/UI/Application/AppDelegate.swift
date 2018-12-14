@@ -10,14 +10,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             |> root(Environment.shared.navigationController)
             <> { $0.makeKeyAndVisible() }
 
-        Environment.shared.navigationController.setViewControllers([ViewController()], animated: false)
+        if let controller = makeController(.login) {
+            Environment.shared.navigationController.setViewControllers([controller], animated: false)
+        }
 
         return true
     }
 
-}
-
-// sourcery:prism
-enum Route {
-    case login
 }

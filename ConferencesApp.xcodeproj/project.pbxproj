@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3267281B41BE2129C43B0AFE /* EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267232FF485B9AF21D2D81C /* EnvironmentTests.swift */; };
+		32672F3C5A172D04B4036AD9 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267215270BFEE4F5F60898A /* Environment.swift */; };
 		8CB053B721C3DFE800ADBDAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB053B621C3DFE800ADBDAD /* AppDelegate.swift */; };
 		8CB053B921C3DFE800ADBDAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB053B821C3DFE800ADBDAD /* ViewController.swift */; };
 		8CB053BC21C3DFE800ADBDAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB053BA21C3DFE800ADBDAD /* Main.storyboard */; };
 		8CB053BE21C3DFEA00ADBDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB053BD21C3DFEA00ADBDAD /* Assets.xcassets */; };
 		8CB053C121C3DFEA00ADBDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB053BF21C3DFEA00ADBDAD /* LaunchScreen.storyboard */; };
-		8CB053CC21C3DFEA00ADBDAD /* ConferencesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB053CB21C3DFEA00ADBDAD /* ConferencesAppTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3267215270BFEE4F5F60898A /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3267232FF485B9AF21D2D81C /* EnvironmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentTests.swift; sourceTree = "<group>"; };
 		8CB053B321C3DFE800ADBDAD /* ConferencesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferencesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB053B621C3DFE800ADBDAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CB053B821C3DFE800ADBDAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +37,6 @@
 		8CB053C021C3DFEA00ADBDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CB053C221C3DFEA00ADBDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CB053C721C3DFEA00ADBDAD /* ConferencesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConferencesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CB053CB21C3DFEA00ADBDAD /* ConferencesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferencesAppTests.swift; sourceTree = "<group>"; };
 		8CB053CD21C3DFEA00ADBDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				8CB053BD21C3DFEA00ADBDAD /* Assets.xcassets */,
 				8CB053BF21C3DFEA00ADBDAD /* LaunchScreen.storyboard */,
 				8CB053C221C3DFEA00ADBDAD /* Info.plist */,
+				3267215270BFEE4F5F60898A /* Environment.swift */,
 			);
 			path = ConferencesApp;
 			sourceTree = "<group>";
@@ -90,8 +93,8 @@
 		8CB053CA21C3DFEA00ADBDAD /* ConferencesAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				8CB053CB21C3DFEA00ADBDAD /* ConferencesAppTests.swift */,
 				8CB053CD21C3DFEA00ADBDAD /* Info.plist */,
+				3267232FF485B9AF21D2D81C /* EnvironmentTests.swift */,
 			);
 			path = ConferencesAppTests;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			files = (
 				8CB053B921C3DFE800ADBDAD /* ViewController.swift in Sources */,
 				8CB053B721C3DFE800ADBDAD /* AppDelegate.swift in Sources */,
+				32672F3C5A172D04B4036AD9 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB053CC21C3DFEA00ADBDAD /* ConferencesAppTests.swift in Sources */,
+				3267281B41BE2129C43B0AFE /* EnvironmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

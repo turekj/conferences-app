@@ -1,5 +1,7 @@
 import UIKit
 
+let Current = Environment()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -7,11 +9,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-            |> root(Environment.shared.navigationController)
+            |> root(Current.navigation.controller)
             <> { $0.makeKeyAndVisible() }
 
         if let controller = makeController(.login) {
-            Environment.shared.navigationController.setViewControllers([controller], animated: false)
+            Current.navigation.controller.setViewControllers([controller], animated: false)
         }
 
         return true

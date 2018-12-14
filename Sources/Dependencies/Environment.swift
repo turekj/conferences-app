@@ -1,9 +1,9 @@
 import UIKit
 
-class Environment {
+struct Environment {
+    var navigation = Navigation()
+}
 
-    static let shared = Environment()
-
-    let navigationController = UINavigationController()
-
+struct Navigation {
+    var controller = UINavigationController()
 }

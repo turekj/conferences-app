@@ -35,6 +35,11 @@ class AppDelegateTests: XCTestCase {
         XCTAssertTrue(sut.window!.isKeyWindow)
     }
 
+    func testThatNavigationControllerFromEnvironmentIsRootViewController() {
+        _ = sut.application(.shared, didFinishLaunchingWithOptions: nil)
+        XCTAssertTrue(sut.window!.rootViewController == Current.navigation.controller)
+    }
+
     func testThatViewControllerIsPushedOntoStackWhenAppIsLaunched() {
         _ = sut.application(.shared, didFinishLaunchingWithOptions: nil)
         let navigationController = sut.window?.rootViewController as? UINavigationController

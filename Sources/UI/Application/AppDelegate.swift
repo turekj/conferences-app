@@ -16,3 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
+// sourcery:prism
+enum Route {
+    case login
+}

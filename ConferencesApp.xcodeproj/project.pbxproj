@@ -19,6 +19,9 @@
 		32672DA19B66825CBE08FB35 /* Appliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326725A81269F04B35F04C81 /* Appliance.swift */; };
 		32672E00FBD410450BF50FB6 /* Prism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326724D2859B5E746B27ADA0 /* Prism.swift */; };
 		32672EA299003659CFA98CB3 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672D54F94C22A8DC0D2462 /* AppDelegateTests.swift */; };
+		8C71FD9421CD0F8100D4AA54 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C71FD9121CD0F8100D4AA54 /* RxSwift.framework */; };
+		8C71FD9521CD0F8200D4AA54 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C71FD9221CD0F8100D4AA54 /* RxCocoa.framework */; };
+		8C71FD9621CD0F8200D4AA54 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C71FD9321CD0F8100D4AA54 /* RxAtomic.framework */; };
 		8CB053B921C3DFE800ADBDAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB053B821C3DFE800ADBDAD /* ViewController.swift */; };
 		8CB053BE21C3DFEA00ADBDAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB053BD21C3DFEA00ADBDAD /* Assets.xcassets */; };
 		8CB053C121C3DFEA00ADBDAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB053BF21C3DFEA00ADBDAD /* LaunchScreen.storyboard */; };
@@ -34,6 +37,18 @@
 			remoteInfo = ConferencesApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C71FD9721CD0FAA00D4AA54 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3267207E3A385A31ABCAED91 /* Prism.stencil */ = {isa = PBXFileReference; lastKnownFileType = file.stencil; path = Prism.stencil; sourceTree = "<group>"; };
@@ -51,6 +66,9 @@
 		32672D67CC5051D8BF7EF19D /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		32672EB90B4927BF5523F6B9 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		32672F26A18AD5E5E9EEFFCD /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		8C71FD9121CD0F8100D4AA54 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		8C71FD9221CD0F8100D4AA54 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		8C71FD9321CD0F8100D4AA54 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
 		8CB053B321C3DFE800ADBDAD /* ConferencesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConferencesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB053B821C3DFE800ADBDAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CB053BD21C3DFEA00ADBDAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C71FD9421CD0F8100D4AA54 /* RxSwift.framework in Frameworks */,
+				8C71FD9521CD0F8200D4AA54 /* RxCocoa.framework in Frameworks */,
+				8C71FD9621CD0F8200D4AA54 /* RxAtomic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,11 +212,22 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		8C71FD9021CD0F8100D4AA54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C71FD9321CD0F8100D4AA54 /* RxAtomic.framework */,
+				8C71FD9221CD0F8100D4AA54 /* RxCocoa.framework */,
+				8C71FD9121CD0F8100D4AA54 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8CB053AA21C3DFE800ADBDAD = {
 			isa = PBXGroup;
 			children = (
 				8CB053B521C3DFE800ADBDAD /* Sources */,
 				8CB053B421C3DFE800ADBDAD /* Products */,
+				8C71FD9021CD0F8100D4AA54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +267,9 @@
 				8CB053AF21C3DFE800ADBDAD /* Sources */,
 				8CB053B021C3DFE800ADBDAD /* Frameworks */,
 				8CB053B121C3DFE800ADBDAD /* Resources */,
+				8C71FD9721CD0FAA00D4AA54 /* CopyFiles */,
+				8C71FD9821CD0FFC00D4AA54 /* Carthage Copy Frameworks */,
+				8C71FD9921CD107200D4AA54 /* Carthage Outdated Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,6 +356,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8C71FD9821CD0FFC00D4AA54 /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxAtomic.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		8C71FD9921CD107200D4AA54 /* Carthage Outdated Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Carthage Outdated Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings\n";
+		};
 		8CB053D621C404AE00ADBDAD /* Sourcery */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,6 +591,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q77FN535PU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,6 +613,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q77FN535PU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

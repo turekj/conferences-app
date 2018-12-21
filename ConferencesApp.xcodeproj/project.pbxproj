@@ -134,8 +134,8 @@
 		326726ED52EA5FF9CFCFC2F1 /* Sourcery */ = {
 			isa = PBXGroup;
 			children = (
-				326725C31005DAC2A46372C6 /* Templates */,
 				32672F34F6AAB8DFA72816FE /* Generated */,
+				326725C31005DAC2A46372C6 /* Templates */,
 			);
 			path = Sourcery;
 			sourceTree = "<group>";
@@ -143,9 +143,9 @@
 		326726F02BB3C57791777F37 /* Functional */ = {
 			isa = PBXGroup;
 			children = (
-				32672997B1D614C1FCA3E78E /* Window */,
 				32672887D587A1A349CC865A /* Operators */,
 				3267204DAA4A9F47155CAAA4 /* Optics */,
+				32672997B1D614C1FCA3E78E /* Window */,
 			);
 			path = Functional;
 			sourceTree = "<group>";
@@ -153,10 +153,10 @@
 		32672887D587A1A349CC865A /* Operators */ = {
 			isa = PBXGroup;
 			children = (
-				32672C5A8A21A176975A243B /* ApplianceTests.swift */,
 				326725A81269F04B35F04C81 /* Appliance.swift */,
-				32672368DE22EB618AEFC43F /* CompositionTests.swift */,
+				32672C5A8A21A176975A243B /* ApplianceTests.swift */,
 				32672488F88A7599ED867D1C /* Composition.swift */,
+				32672368DE22EB618AEFC43F /* CompositionTests.swift */,
 			);
 			path = Operators;
 			sourceTree = "<group>";
@@ -181,8 +181,8 @@
 		32672A9E27523FAEE5A73FAA /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				32672D67CC5051D8BF7EF19D /* Environment.swift */,
 				326723EDFC5AD6B9CDDE0824 /* Navigation */,
+				32672D67CC5051D8BF7EF19D /* Environment.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -206,8 +206,8 @@
 		32672F69098CFEDA331928BC /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				326729D31186FFF08C869A0F /* Route.swift */,
 				326726BC9C053998D311BC07 /* ControllerFactory.swift */,
+				326729D31186FFF08C869A0F /* Route.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -225,9 +225,9 @@
 		8CB053AA21C3DFE800ADBDAD = {
 			isa = PBXGroup;
 			children = (
-				8CB053B521C3DFE800ADBDAD /* Sources */,
-				8CB053B421C3DFE800ADBDAD /* Products */,
 				8C71FD9021CD0F8100D4AA54 /* Frameworks */,
+				8CB053B421C3DFE800ADBDAD /* Products */,
+				8CB053B521C3DFE800ADBDAD /* Sources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,15 +243,15 @@
 		8CB053B521C3DFE800ADBDAD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				8CB053B821C3DFE800ADBDAD /* ViewController.swift */,
+				32672A9E27523FAEE5A73FAA /* Dependencies */,
+				326726F02BB3C57791777F37 /* Functional */,
+				32672F69098CFEDA331928BC /* Navigation */,
+				326726ED52EA5FF9CFCFC2F1 /* Sourcery */,
+				326728EC553D2CB3A9EE8733 /* Supporting Files */,
+				32672C9907071EEDD7E09908 /* UI */,
 				8CB053BD21C3DFEA00ADBDAD /* Assets.xcassets */,
 				8CB053BF21C3DFEA00ADBDAD /* LaunchScreen.storyboard */,
-				326726F02BB3C57791777F37 /* Functional */,
-				32672C9907071EEDD7E09908 /* UI */,
-				32672A9E27523FAEE5A73FAA /* Dependencies */,
-				326728EC553D2CB3A9EE8733 /* Supporting Files */,
-				326726ED52EA5FF9CFCFC2F1 /* Sourcery */,
-				32672F69098CFEDA331928BC /* Navigation */,
+				8CB053B821C3DFE800ADBDAD /* ViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";

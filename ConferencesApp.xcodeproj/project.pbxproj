@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		326720ECA1C417ABEBAA39D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326725688DF7F49D55DB30C7 /* AppDelegate.swift */; };
+		326721434ADD5C8D0E4A0072 /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267257DFC4EFDEAF5BE527C /* NavigationTests.swift */; };
 		326724108F9B476CBC59BC5C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326729D31186FFF08C869A0F /* Route.swift */; };
 		3267246B6E0F39EEB6BE73DC /* ApplianceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672C5A8A21A176975A243B /* ApplianceTests.swift */; };
 		3267248F96D654D6447918B3 /* CompositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672368DE22EB618AEFC43F /* CompositionTests.swift */; };
 		3267256DBB0F762ED05BA1F6 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672F26A18AD5E5E9EEFFCD /* UIWindow.swift */; };
 		326725D32E667DF0576F448B /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326726BC9C053998D311BC07 /* ControllerFactory.swift */; };
 		32672611BBCE4A0E3664BE2D /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672EB90B4927BF5523F6B9 /* Navigation.swift */; };
+		32672709AFFB7B7C0C5B4768 /* NavigationControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672D21DD7F802D27DA3A2F /* NavigationControllerSpy.swift */; };
 		32672816C778992E9DEE8C19 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672D67CC5051D8BF7EF19D /* Environment.swift */; };
 		326728A3E2F648F9941CC671 /* Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672488F88A7599ED867D1C /* Composition.swift */; };
 		32672DA19B66825CBE08FB35 /* Appliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326725A81269F04B35F04C81 /* Appliance.swift */; };
@@ -58,10 +60,12 @@
 		32672488F88A7599ED867D1C /* Composition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Composition.swift; sourceTree = "<group>"; };
 		326724D2859B5E746B27ADA0 /* Prism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prism.swift; sourceTree = "<group>"; };
 		326725688DF7F49D55DB30C7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3267257DFC4EFDEAF5BE527C /* NavigationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
 		326725A81269F04B35F04C81 /* Appliance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appliance.swift; sourceTree = "<group>"; };
 		326726BC9C053998D311BC07 /* ControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		326729D31186FFF08C869A0F /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		32672C5A8A21A176975A243B /* ApplianceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplianceTests.swift; sourceTree = "<group>"; };
+		32672D21DD7F802D27DA3A2F /* NavigationControllerSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerSpy.swift; sourceTree = "<group>"; };
 		32672D54F94C22A8DC0D2462 /* AppDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		32672D67CC5051D8BF7EF19D /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		32672EB90B4927BF5523F6B9 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				32672EB90B4927BF5523F6B9 /* Navigation.swift */,
+				3267257DFC4EFDEAF5BE527C /* NavigationTests.swift */,
+				32672D21DD7F802D27DA3A2F /* NavigationControllerSpy.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -444,6 +450,8 @@
 				32672EA299003659CFA98CB3 /* AppDelegateTests.swift in Sources */,
 				3267246B6E0F39EEB6BE73DC /* ApplianceTests.swift in Sources */,
 				3267248F96D654D6447918B3 /* CompositionTests.swift in Sources */,
+				326721434ADD5C8D0E4A0072 /* NavigationTests.swift in Sources */,
+				32672709AFFB7B7C0C5B4768 /* NavigationControllerSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,8 @@
 		32672709AFFB7B7C0C5B4768 /* NavigationControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672D21DD7F802D27DA3A2F /* NavigationControllerSpy.swift */; };
 		32672816C778992E9DEE8C19 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672D67CC5051D8BF7EF19D /* Environment.swift */; };
 		326728A3E2F648F9941CC671 /* Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672488F88A7599ED867D1C /* Composition.swift */; };
+		32672A5F18A49F6FF30793B9 /* NavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672A731519CDA006E7F642 /* NavigationAction.swift */; };
+		32672D18B96AC91B90A9B5A4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326721FA011DE5706844932D /* Router.swift */; };
 		32672DA19B66825CBE08FB35 /* Appliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326725A81269F04B35F04C81 /* Appliance.swift */; };
 		32672E00FBD410450BF50FB6 /* Prism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326724D2859B5E746B27ADA0 /* Prism.swift */; };
 		32672EA299003659CFA98CB3 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32672D54F94C22A8DC0D2462 /* AppDelegateTests.swift */; };
@@ -58,6 +60,7 @@
 		3267207E3A385A31ABCAED91 /* Prism.stencil */ = {isa = PBXFileReference; lastKnownFileType = file.stencil; path = Prism.stencil; sourceTree = "<group>"; };
 		3267219C87CE830D6430E3BA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		326721B23FE7D0AC45D9D0B2 /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		326721FA011DE5706844932D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		32672368DE22EB618AEFC43F /* CompositionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionTests.swift; sourceTree = "<group>"; };
 		32672488F88A7599ED867D1C /* Composition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Composition.swift; sourceTree = "<group>"; };
 		326724D2859B5E746B27ADA0 /* Prism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prism.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		326726BC9C053998D311BC07 /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		326728E7083D004FBA5563DB /* OrCompositionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrCompositionTests.swift; sourceTree = "<group>"; };
 		326729D31186FFF08C869A0F /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		32672A731519CDA006E7F642 /* NavigationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationAction.swift; sourceTree = "<group>"; };
 		32672C5A8A21A176975A243B /* ApplianceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplianceTests.swift; sourceTree = "<group>"; };
 		32672D21DD7F802D27DA3A2F /* NavigationControllerSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerSpy.swift; sourceTree = "<group>"; };
 		32672D54F94C22A8DC0D2462 /* AppDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				32672EB90B4927BF5523F6B9 /* Navigation.swift */,
 				3267257DFC4EFDEAF5BE527C /* NavigationTests.swift */,
 				32672D21DD7F802D27DA3A2F /* NavigationControllerSpy.swift */,
+				326721FA011DE5706844932D /* Router.swift */,
+				32672A731519CDA006E7F642 /* NavigationAction.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -446,6 +452,8 @@
 				326724108F9B476CBC59BC5C /* Route.swift in Sources */,
 				326725D32E667DF0576F448B /* Transition.swift in Sources */,
 				32672611BBCE4A0E3664BE2D /* Navigation.swift in Sources */,
+				32672D18B96AC91B90A9B5A4 /* Router.swift in Sources */,
+				32672A5F18A49F6FF30793B9 /* NavigationAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

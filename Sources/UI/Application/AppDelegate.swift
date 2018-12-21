@@ -12,9 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             |> root(Current.navigation.controller)
             <> { $0.makeKeyAndVisible() }
 
-        if let controller = makeController(.login) {
-            Current.navigation.controller.setViewControllers([controller], animated: false)
-        }
+        Current.navigation.perform(action: .start)
 
         return true
     }
